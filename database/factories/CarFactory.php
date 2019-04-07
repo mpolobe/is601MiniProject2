@@ -12,5 +12,5 @@ $factory->define(App\Car::class, function (Faker $faker) {
         'year' => $faker->year,
     ];
 
-    
+
 });
