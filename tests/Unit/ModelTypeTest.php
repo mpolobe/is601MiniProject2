@@ -1,4 +1,4 @@
-<?php
+<?php /** @noinspection PhpDeprecationInspection */
 
 namespace Tests\Unit;
 
@@ -13,6 +13,6 @@ class ModelTypeTest extends TestCase
     {
         $car = Car::all();
         $car = Car::find(12);
-        $this->assertIsString('string', $car->model);
+        $this->assertInternalType('string', $car->model);
     }
 }
