@@ -12,6 +12,7 @@ class YearIntTest extends TestCase
     public function testCarYear()
     {
         $car = Car::find(30);
+        /** @noinspection PhpDeprecationInspection */
         $this->assertInternalType('numeric',$car->year);
     }
 }
