@@ -13,13 +13,13 @@ class MakeTest extends TestCase
     {
       //  $cars = Car::all();
         $car = Car::inRandomOrder()->first();
-        if ($car->make = "Ford") {
+        if ($car->make = "Honda") {
             $this->assertTrue(true);
         }
-        elseif ($car->make = "Honda") {
+        elseif ($car->make = "Toyota") {
             $this->assertTrue(true);
         }
-        else ($car->make = "Toyota");
+        else ($car->make = "Ford");
         {
             $this->assertTrue(true);
         }
